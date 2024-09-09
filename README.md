@@ -95,7 +95,7 @@ Please read carefully [our license](LICENSE) and ask us if you have any question
 
 ## Configuration
 
-We've exposed the **Basic configuration** settings in Taiga to an `.env` file. We strongly recommend you to change it, or at least review its content, to avoid using the default values.
+We've exposed the **Basic configuration** settings in Taiga to an `.env` file. We provided a sample config as `.sample.env`. Before starting the docker stack, **make sure to create the `.env` file on your own or by copying the provided sample**, otherwise the environment variables won't be picked up, and consequently the stack won't start correctly. We **strongly** recommend you to change the `SECRET_KEY` in the `.env` file and all passwords to unique values, and review its contents, so you will be using the appropriate values.
 
 Both `docker-compose.yml` and `docker-compose-inits.yml` will read from this file to populate their environment variables, so, initially you don't need to change them. Edit these files just in case you require to enable **Additional customization**, or an **Advanced configuration**.
 
